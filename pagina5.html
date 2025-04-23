@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clã Himura - Página 5</title>
+
+    <!-- Adicionando a fonte Cinzel do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilos Globais */
+        body {
+            font-family: 'Cinzel', serif;  /* Usando a fonte Cinzel */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #0a2a56; /* Azul profundo */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .quote {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            margin: 20px 0;
+            font-style: italic;
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Efeito de água (fluidez) no fundo */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #1e3d58, #0a2a56);
+            animation: wave 3s ease-in-out infinite;
+            z-index: -1;
+        }
+
+        @keyframes wave {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        /* Estilos para o conteúdo */
+        .message {
+            font-size: 1.5rem;
+            color: #ffcc00;
+            max-width: 900px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Estilo para o botão de "parabéns" */
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .back-button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            background-color: #ffcc00;
+            color: #0a2a56;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #a1c4fd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <div class="quote">
+        Meus parabéns! Vocês venceram o desafio do último dia dos Jogos da Primavera!<br>
+        Sendo assim, receberam os seguintes itens:<br>
+        <strong>Grimório Nível Básico em Runas</strong> e <strong>Grimório Nível Básico em Selos</strong>.<br><br>
+
+        Aos que colaboraram ativamente com o jogo, agradecemos e esperamos que tenham se divertido.<br>
+        O placar final será liberado em algumas horas, juntamente dos prêmios finais da maratona de desafios.
+    </div>
+
+    <!-- Botão de "parabéns" -->
+    <div class="button-container">
+        <button onclick="voltarInicio()" class="back-button">Voltar ao Início</button>
+    </div>
+
+    <script>
+        // Função para redirecionar ao início (ou para a página principal)
+        function voltarInicio() {
+            window.location.href = "index.html"; // Defina o caminho correto para a página inicial ou a página principal
+        }
+    </script>
+
+</body>
+</html>
